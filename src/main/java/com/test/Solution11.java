@@ -13,7 +13,7 @@ public class Solution11 {
         // 遍历链表，每一次遍历时都要判断接下来第k个节点是否为null
         // 如果是，则该节点就是目标节点
         ListNode cur = head; // 作为指针
-        while (cur != null && cur.next != null) {
+        while (cur != null) {
             ListNode zz = cur;
             for (int i = 0; i < k; i++) {
                 zz = zz.next; // 单独的指针
